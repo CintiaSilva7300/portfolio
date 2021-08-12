@@ -1,0 +1,347 @@
+
+html,body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #2b2b2b ;
+	font-family: 'montserrat', sans-serif;
+}
+
+.navigation ul {
+	margin-top: 0px;
+	list-style: none;
+	padding-left: 0px;
+	text-align: right;
+	height: 50px;
+}
+
+.navigation {
+	background-color: #2b2b2b; 
+	color: white;
+	height: 50px;	
+
+	animation-name: profile-capa;
+	animation-duration: 1s
+}
+
+.navigation li {
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 100px;
+}
+
+.navigation a{
+	text-decoration: none;
+		color: white;
+}
+
+.navigation a:hover{
+	color:#f27609 ;
+}
+
+.navigation li.threeline-icon {
+	display: none;
+}
+
+
+.navigation li.threeline-icon:hover {
+	color:  #f27609;
+	cursor: pointer;
+}	
+
+.capa {
+	color: white;
+}
+
+.capa span {
+	color: #f27609;
+	display: block;
+}
+
+.capa div {
+	display: inline-block;
+	height: 650px;
+}
+
+.profile-pic {
+	width: 40%;
+	text-align: center;
+
+	animation-name: profile-capa;
+	animation-duration: 2s;
+}
+
+.profile-pic img {
+	width: 250px;
+	border-radius: 250px;
+	margin-top: 150px;
+}
+
+.profile-title {
+	vertical-align: top;
+	width: 59%;
+
+	animation-name:title-capa;
+	animation-duration: 2s;
+}
+
+.profile-title h1 {
+	text-transform: uppercase;
+	font-size: 58px;
+	margin-top: 200px;
+	font-weight: 400px;
+	line-height: 53px;
+}
+
+.profile-title h2 {
+	font-size: 16px;
+	font-weight: 100px;
+	margin-top: -35px;
+}
+
+.cv-pic {
+	float: left;
+	width: 250px;
+	margin-right: 30px;
+} 
+
+.main {
+	padding-top: 80px;
+	padding-right: 180px;
+	padding-bottom: 80px;
+	padding-left: 100px;
+
+	animation-name: conteudo;
+	animation-duration: 1s
+}
+
+.main h1 {
+	color: white;
+	font-weight: normal;
+}
+
+.main h2 {
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 40px;
+}
+
+.main h3 {
+	color: #f27609;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.main p {
+	color: white;
+	font-size: 18px;
+	font-weight: 100px;
+	line-height: 24px;
+	text-align:justify ;
+}
+
+.caminho a{
+	color: grey;
+}
+
+.caminho {
+	list-style: nome;
+	padding-left: 0px;
+	calor: grey;
+}
+
+.caminho li {
+	display: inline-block;	
+}
+
+.social-img {
+	width: 50px;
+	margin-right: 12px;
+}
+
+.miniatura {
+	width: 320px;
+	height: 320px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-size: contain;
+	overflow: hidden;
+}
+
+.miniatura a {
+	text-decoration: none;
+}
+
+.blackbox {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0%;
+	padding-top: 120px;
+}
+
+.blackbox:hover {
+	opacity: 0.8;
+	transition: 2s;
+}
+
+.black-text{
+	text-align: center;
+}
+
+.black-text h1 {
+	font-size: 16px;
+	color: #f27609;
+	text-transform: uppercase;
+	margin-top: 0px;
+}
+
+.black-text h2 {
+	text-transform: none;
+	font-weight: 100;
+	margin-top: 0px;
+}
+
+.foto-trabalhos {
+	width: 50%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.back-link {
+	color:#f27609;
+}
+
+	@keyframes profile-capa {
+	0% {opacity: 0;transform: translate(0px,20px)}
+	100% {opacit: 1;transform: translate(0px,0px)}
+}
+
+@keyframes title-capa {
+	0% {opacity: 0;transform: translate(0px,-20px)}
+	100% {opacit: 1;transform: translate(0px,0px)}
+}
+
+@keyframes conteudo {
+	0% {opacity: 0;transform: translate(-20px,0px)}
+	100% {opacit: 1;transform: translate(0px,0px)}
+}
+
+@keyframes navigation-capa {
+	0% {opacity: 0;}
+	50% {opacit: 0;}
+	100%{opacity:1;}
+}
+
+@media (max-width:1000px) {
+
+.navigation li{
+	display: none;
+}
+
+.navigation li.threeline-icon {
+	display: inline-block
+}
+
+.capa div {
+	display:block;
+	height: auto;
+}
+
+.profile-pic {
+	width: 100%;
+}
+
+.profile-title {
+	text-align: center;
+	width: 100%;
+}
+
+.profile-pic img {
+	margin-top: 75px;
+	margin-top: 0px;
+	max-width: 80%;
+}
+
+.profile-title h1 {
+	margin-top: 20px;
+	font-size: 36px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.profile-title h2 {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.main {
+	padding:  10px 5% 40px 5%;	
+}
+
+.main p {
+	text-align: left;
+	line-height: 30px;
+}
+
+.main a {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.caminho li {
+	font-size: 13px;
+}
+
+.cv-pic {
+	float: none;
+	max-width: 100%;
+	margin-right:0px; 
+} 
+
+.miniatura{
+	max-width: 100%;
+	background-size: auto 100%;
+}
+
+.blackbox {
+	opacity: 0.8;
+}
+
+.menujs {
+	height: auto;
+
+}
+
+.menujs ul {
+	height: auto;
+	text-align: center;
+	padding-right: 15%;
+	padding-left: 15%;
+
+}
+
+.menujs li {
+	display: block;
+	border-bottom: solid grey 1px;
+	width: 100%;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+}
