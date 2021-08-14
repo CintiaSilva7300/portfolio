@@ -135,8 +135,13 @@ body {
 
 .main h3 {
 	color: #f27609;
-	font-size: 12px;
+	font-size: 30px;
 	text-transform: uppercase;
+	font-size: 15px;
+}		
+
+.Educação h3 {
+	font-size: 20px;
 }
 
 .main p {
@@ -145,6 +150,14 @@ body {
 	font-weight: 100px;
 	line-height: 24px;
 	text-align:justify ;
+}
+
+.colunas p{
+	color: white;
+	font-size: 18px;
+	font-weight: 100px;
+	line-height: 24px;
+	text-align:justify;
 }
 
 .caminho a{
@@ -210,11 +223,16 @@ body {
 	margin-top: 0px;
 }
 
+.h2 {
+	font-size: 70px;
+}
+
 .foto-trabalhos {
 	width: 50%;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
+
 
 .back-link {
 	color:#f27609;
